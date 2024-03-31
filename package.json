@@ -1,0 +1,19 @@
+{
+  "name": "founders-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brogers111/founders-timeline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brogers111/founders-timeline/issues"
+  },
+  "homepage": "https://github.com/brogers111/founders-timeline#readme"
+}
