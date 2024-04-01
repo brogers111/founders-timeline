@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/brogers111/founders-timeline/issues"
   },
-  "homepage": "https://github.com/brogers111/founders-timeline#readme"
+  "homepage": "https://github.com/brogers111/founders-timeline#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
