@@ -1,3 +1,7 @@
+<% 
+foundersArray.sort((a, b) => new Date(a.born) - new Date(b.born));
+%>
+
 <div class="founders">
     <h1 class="founders-heading">Timeline</h1>
     <p class="founders-body">A timeline of all the successful founders throughout history.</p>
@@ -6,41 +10,34 @@
 <img src="/img/founders-hero.jpg" alt="A collage of founders" class="hero-image">
 
 <section class="founder">
-    <h2 class="founder-heading">Select Founder</h2>
+    <h2 class="founder-heading">Founder Details</h2>
 
     <div class="timeline">
-        <div class="checkpoint">
-            <div>
-                <h2>Sol Price</h2>
-                <p><strong>Childhood:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Personality Traits:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Business Practices:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Unique Strategies:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Legacy:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
+        <% foundersArray.forEach((founder, index) => { %>
+            <div class="checkpoint">
+                <div>
+                    <div class="founder-image-container">
+                        <img src="<%= founder.photo %>" class="founder-image" alt="founder image">
+                    </div>
+                    <h2><%= founder.name %></h2>
+                    <p class="years-alive"><%= formatDate(founder.born, founder.died) %></p>
+                    <p><strong>Company:</strong> <%= founder.company %></p>
+                    <p class="attributes"><strong>Attributes:</strong></p>
+                    <ul>
+                        <% for (const [category, sentences] of Object.entries(founder.attributes)) { %>
+                            <li><strong><%= category %>:</strong><br>
+                                <% const sentenceArray = sentences.split('.').filter(sentence => sentence.trim() !== ''); %>
+                                <% sentenceArray.forEach((sentence, index) => { %>
+                                    <%- sentence.trim() + '.' %><%- (index !== sentenceArray.length - 1) ? '<br>' : '' %>
+                                <% }); %>
+                            </li>
+                        <% } %>                                                
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="checkpoint">
-            <div>
-                <h2>Sol Price</h2>
-                <p><strong>Childhood:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Personality Traits:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Business Practices:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Unique Strategies:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-                <p><strong>Legacy:</strong></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rem cupiditate animi accusantium amet laborum exercitationem itaque perferendis explicabo. Deleniti distinctio nesciunt, architecto at consequatur libero et alias. Non, aliquid?</p>
-            </div>
-        </div>
+            <% if (index < foundersArray.length - 1) { %>
+                <div class="timeline-divider"></div>
+            <% }; %>
+        <% }); %>
     </div>
-        
 </section>
-
-<script type="text/javascript" defer src="/js/timeline.js"></script>

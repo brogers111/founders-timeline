@@ -1,0 +1,30 @@
+[
+  {
+    "born": "1916-01-23",
+    "died": "2009-12-14",
+    "company": "Price Club",
+    "name": "Sol Price",
+    "photo": "/img/sol-price.jpg",
+    "attributes": {
+      "Childhood": "Early Years: Sol Price was born in New York City, New York. Family Influence: Influenced by his immigrant parents' work ethic and determination to succeed in America. Education: Graduated from the University of Southern California Law School in 1938.",
+      "Personality Traits": "Innovative: Known for his innovative approach to retail and business, constantly seeking new ideas and solutions. Visionary: Had a forward-thinking vision for retail, pioneering the warehouse club concept. Socially Conscious: Demonstrated a strong commitment to social responsibility and ethical business practices.",
+      "Business Practices": "Founding Price Club: Founded Price Club in 1976, introducing the concept of membership-based warehouse stores. Membership Model: Implemented a membership-based business model, offering bulk discounts to customers. Focus on Value: Emphasized value and cost-saving for customers, revolutionizing retail industry with discounted bulk pricing.",
+      "Unique Strategies": "Warehouse Club Concept: Introduced the warehouse club concept, providing customers with access to wholesale prices on bulk goods. Customer Loyalty: Built a loyal customer base through membership perks and discounts, fostering a sense of community among shoppers. Efficiency and Cost Savings: Prioritized operational efficiency and cost-saving measures, passing on savings to customers through lower prices.",
+      "Legacy": "Retail Revolution: Transformed the retail landscape with the warehouse club model, paving the way for the rise of membership-based retail. Entrepreneurial Vision: Inspired new generation of entrepreneurs with his innovative business model and approach to retail. Philanthropy: Contributed to philanthropic causes, supporting education, healthcare, and community development initiatives. Enduring Impact: Price's legacy continues to influence the retail industry and business practices, shaping the way companies approach customer engagement and value delivery."
+    }
+  },
+  {
+    "born": "1918-03-29",
+    "died": "1992-04-05",
+    "company": "Walmart",
+    "name": "Sam Walton",
+    "photo": "/img/sam-walton.webp",
+    "attributes": {
+      "Childhood": "Early Years: Samuel Moore Walton was born in Kingfisher, Oklahoma. Farm Life: Grew up on a farm where he learned the value of hard work and entrepreneurship. Scouting and Education: Achieved the rank of Eagle Scout and attended the University of Missouri, majoring in economics.",
+      "Personality Traits": "Entrepreneurial Spirit: Demonstrated a strong entrepreneurial drive at a young age, selling newspapers and delivering milk. Perseverance: Overcame challenges during the Great Depression, contributing to the family's finances through odd jobs. Leadership Qualities: Exhibited leadership qualities in high school and college, serving in various roles and organizations.",
+      "Business Practices": "Founding Walmart: Founded Walmart in 1962, pioneering innovative retail strategies and a focus on low prices. Customer-Centric Approach: Prioritized customer satisfaction and value, revolutionizing the retail industry with customer-focused strategies. Expansion and Growth: Expanded Walmart from a single store to a global retail giant, emphasizing logistical efficiency and strategic expansion.",
+      "Unique Strategies": "Everyday Low Prices: Introduced the concept of everyday low prices, offering customers affordable goods without sacrificing quality. Logistical Innovation: Innovated in logistics and supply chain management, ensuring efficient distribution and stocking of goods. Community Engagement: Emphasized community engagement and local involvement, establishing Walmart as a pillar of the communities it served.",
+      "Legacy": "Retail Revolution: Transformed the retail landscape with Walmart's unprecedented growth and influence, leaving a lasting impact on the industry. Entrepreneurial Legacy: Inspired generations of entrepreneurs with innovative business practices and entrepreneurial spirit. Philanthropy: Contributed to philanthropic causes, supporting education, healthcare, and community development initiatives. Global Influence: Walmart's global reach and influence continue to shape the retail industry and economies around the world, cementing Sam Walton's legacy as one of the most influential entrepreneurs of the 20th century."
+    }
+  }
+]

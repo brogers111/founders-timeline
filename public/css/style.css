@@ -66,14 +66,6 @@ textarea {
     background-color: var(--red);
 }
 
-img {
-    display: block;
-    margin: auto;
-    max-width: 982px;
-    width: 100%;
-    height: auto;
-}
-
 /* Layout */
 .container {
     margin: 0 auto;
@@ -86,7 +78,12 @@ img {
 
 /* Hero Section */
 .hero-image {
+    display: block;
+    margin: auto;
+    max-width: 982px;
+    width: 100%;
     max-height: 650x;
+    height: auto;
     filter: drop-shadow(0px 44px 34px rgba(0,0,0,0.25));
     overflow: hidden;
     border-radius: var(--border-radius);
@@ -204,105 +201,184 @@ img {
 
 .footer {
     text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Timeline */
-.timeline {
-    margin: 5em auto;
-    max-width: 34.15em;   
-}
+/* Founder Card */
 
 .checkpoint {
-    max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
     position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 20px 10%;
+    display: flex;
 }
 
-.checkpoint div{
-    border: 2px solid #888;
-    border-radius: 1em;
-    padding: 1.5em;
+.founder-image-container {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-right: 20px;
 }
 
-.checkpoint p{
-    line-height: 27px;
-    color: #ccc;
-}
-
-.checkpoint:nth-child(odd){
-    border-left: 3px solid #888;
-    padding-left: 3em;
-    transform: translateX(17em);
-}
-
-.checkpoint:nth-child(even){
-    border-right: 3px solid #888;
-    padding-right: 3em;
-    transform: translateX(-17em);
-}
-
-.checkpoint:nth-child(odd)::before,
-.checkpoint:nth-child(even)::before{
-    content: '';
-    background: #888;
-    width: 3em;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.checkpoint:nth-child(odd)::before {
-    left: 0;
-}
-
-.checkpoint:nth-child(even)::before {
-    right: 0;
-}
-
-.checkpoint:nth-child(odd) div::before,
-.checkpoint:nth-child(even) div::before {
-    content: '';
-    background: #fff;
-    box-shadow: 0 0 0.5em #000000;
-    width: 0.8em;
-    height: 0.8em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.founder-image {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-.checkpoint:nth-child(odd) div::before {
-    left: -0.5em;
+.years-alive {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 14px;
 }
 
-.checkpoint:nth-child(even) div::before {
-    right: -0.5em;
+.checkpoint h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1150px) {
-    .timeline {
-        width: 80vw;
+.checkpoint p {
+    margin-bottom: 8px;
+}
+
+.checkpoint ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checkpoint ul li {
+    margin-bottom: 4px;
+}
+
+.checkpoint:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.checkpoint .attributes{
+    font-size: var(--font-size-md);
+}
+
+.timeline-divider {
+    border-top: 1px solid var(--gray-light);
+    margin: 20px 0;
+}
+
+/* Upload Founder Page */
+.upload {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.upload-heading {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.upload-body {
+    font-size: var(--font-size-md);
+    margin: 5px 0 40px 0;
+}
+
+.upload-area {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: transparent;
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin: 20px 10%;
+    width: 100%;
+}
+
+label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.form-heading {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+input[type='text']{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type='date']{
+    font-size: large;
+    width: 8rem;
+    padding: 5px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+input[type='textarea'] {
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+form button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* New CSS for layout */
+.row {
+    display: flex;
+    gap: 10px; /* Adjust as needed */
+}
+
+.column {
+    flex: 1;
+}
+
+@media only screen and (max-width: 768px){
+    form {
+        padding: 30px;
+        margin: 20px 10%;
     }
-    .timeline .checkpoint {
+    input[type='textarea'] {
         width: 100%;
-        transform: none;
-        padding-left: 0;
-        padding-right: 0;
-        border: none;
-    }
-    .timeline .checkpoint::before {
-        width: 3px;
-        height: 4em;
-        top: -2em;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .timeline .checkpoint div::before {
-        top: -0.5em;
-        left: 50%;
-        transform: translateX(-50%);
+        padding: 0px;
     }
 }

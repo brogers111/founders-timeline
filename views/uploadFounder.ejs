@@ -1,0 +1,57 @@
+<div class="upload">
+    <h1 class="upload-heading">Upload Founder</h1>
+    <p class="upload-body">Provide the information below to upload a new founder to the timeline.</p>
+</div>
+
+<section class="upload-area">
+    <form action="/add-founder" method="POST">
+
+        <label for="founder-details" class="form-heading">Personal Details:</label>
+
+        <div class="row">
+            <div class="column">
+                <label for="name">Founder's Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="column">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company">
+            </div>
+        </div>
+
+        <label for="photo">Photo URL:</label>
+        <input type="text" id="photo" name="photo">
+
+        <div class="row">
+            <div class="column">
+                <label for="born">Date Born:</label>
+                <input type="date" id="born" name="born">
+            </div>
+            <div class="column">
+                <label for="died">Date Died:</label>
+                <input type="date" id="died" name="died">
+            </div>
+        </div>
+
+        <label for="attributes" class="form-heading">Attributes:</label>
+
+        <label for="childhood">Childhood:</label>
+        <input type="textarea" id="childhood" name="childhood"><br>
+
+        <label for="personality">Personality Traits:</label>
+        <input type="textarea" id="personality" name="personality"><br>
+
+        <label for="business">Business Practices:</label>
+        <input type="textarea" id="business" name="business"><br>
+
+        <label for="strategies">Unique Strategies:</label>
+        <input type="textarea" id="strategies" name="strategies"><br>
+
+        <label for="legacy">Legacy:</label>
+        <input type="textarea" id="legacy" name="legacy"><br>
+
+        <div class="button-container">
+            <button type="submit">Add Founder</button>
+        </div>
+    </form>
+</section>
